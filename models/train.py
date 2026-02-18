@@ -12,7 +12,7 @@ train_loader, val_loader, _ = get_data_loaders(
     "data/test"
 )
 
-model = SkinTypeResNet(num_classes=3).to(device)
+model = SkinTypeResNet(num_classes=4).to(device)
 
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.model.fc.parameters(), lr=0.001)
