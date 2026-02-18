@@ -1,7 +1,7 @@
 from torchvision import datasets, transforms
 from torch.utils.data import DataLoader 
 
-def get_data_loaders(train_dir, val_dir, batch_size=32):
+def get_data_loaders(train_dir, val_dir,test_dir, batch_size=32):
     transform = transforms.Compose([
         transforms.Resize((224, 224)),
         transforms.RandomHorizontalFlip(),

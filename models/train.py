@@ -1,15 +1,15 @@
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from resnet_model import SkinTypeResNet
+from .resnet_model import SkinTypeResNet
 from utils.data_loader import get_data_loaders
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 train_loader, val_loader, _ = get_data_loaders(
-    "data/train",
-    "data/val",
-    "data/test"
+    "data/raw/train",
+    "data/raw/val",
+    "data/raw/test"
 )
 
 model = SkinTypeResNet(num_classes=4).to(device)
