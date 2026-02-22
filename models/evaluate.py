@@ -8,9 +8,9 @@ from utils.data_loader import get_data_loaders
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 _, _, test_loader = get_data_loaders(
-    "data/raw/train",
-    "data/raw/val",
-    "data/raw/test"
+    "data/processed/train",
+    "data/processed/val",
+    "data/processed/test"
 )
 
 model = SkinTypeResNet(num_classes=4)
