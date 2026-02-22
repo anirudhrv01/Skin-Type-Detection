@@ -13,7 +13,7 @@ _, _, test_loader = get_data_loaders(
     "data/processed/test"
 )
 
-model = SkinTypeResNet(num_classes=4)
+model = SkinTypeResNet(num_classes=3)
 model.load_state_dict(torch.load("models/best_model.pth"))
 model.to(device)
 model.eval()

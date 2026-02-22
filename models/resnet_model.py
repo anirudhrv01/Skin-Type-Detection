@@ -3,7 +3,7 @@ import torch.nn as nn
 import torchvision.models as models
 
 class SkinTypeResNet(nn.Module):
-    def __init__(self, num_classes=4):
+    def __init__(self, num_classes=3):
         super(SkinTypeResNet, self).__init__()
 
         self.model = models.resnet50(weights="IMAGENET1K_V1")
