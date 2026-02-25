@@ -18,7 +18,7 @@ transform = transforms.Compose([
                          [0.229, 0.224, 0.225])
 ])
 
-image_path = "data/single/DrySkin.jpg"
+image_path = "data/single/vishnu.jpg"
 image = Image.open(image_path).convert("RGB")
 image = transform(image).unsqueeze(0).to(device)
 
