@@ -1,6 +1,6 @@
 # Skin Type Detection
 
-A deep learning–based system that detects facial skin type from a selfie image using computer vision and Convolutional Neural Networks (CNN), and provides personalized skincare product recommendations based on the detected skin type and user budget.
+A deep learning–based system that detects facial skin type from a microscopic skin images using computer vision and Convolutional Neural Networks (CNN), and provides personalized skincare product recommendations based on the detected skin type and user budget.
 
 ---
 
@@ -8,7 +8,7 @@ A deep learning–based system that detects facial skin type from a selfie image
 
 Choosing suitable skincare products requires understanding one's skin type. This project automates skin type detection using image preprocessing and deep learning techniques. 
 
-The system analyzes facial texture, brightness, and surface characteristics from a selfie image to classify the skin type. Based on the prediction, it recommends suitable skincare products and filters them according to the user's budget.
+The system analyzes facial texture, brightness, and surface characteristics from a microscopic image to classify the skin type. Based on the prediction, it recommends suitable skincare products and filters them according to the user's budget.
 
 This reduces guesswork and supports more personalized skincare selection.
 
@@ -16,7 +16,7 @@ This reduces guesswork and supports more personalized skincare selection.
 
 ## 🎯 Objectives
 
-- Detect skin type from a selfie image
+- Detect skin type from a microscopic image
 - Use CNN-based deep learning for classification
 - Apply image preprocessing techniques
 - Develop a personalized product recommendation module
